@@ -1,8 +1,8 @@
 {
   "name": "symbols-view-plus",
-  "version": "0.117.0-plus.1",
+  "version": "0.117.0-plus.2",
   "description": "An alternative to atom/symbols-view",
-  "repository": "https://github.com/aidistan/atom-symbols-view-plus",
+  "repository": "https://github.com/casmbu/atom-symbols-view-plus",
   "keywors": [
     "symbols",
     "tags",
@@ -71,8 +71,8 @@
           "title": "Extra Command Arguments For CTAGS When Generating Project Symbols",
           "description": "Add extra [ctag command arguments](http://ctags.sourceforge.net/ctags.html), which usually are exclusive patterns, when generating project symbols, like `--exclude=node_modules --exclude=spec --exclude=*.html`. Default is to exclude all files ignored by git.",
           "order": 2,
-          "type": "string",
-          "default": "--exclude=@.gitignore"
+          "type": "array",
+          "default": ["--exclude=@.gitignore"]
         },
         "updateProjectTagsAfterTogglingFileSymbols": {
           "title": "Update Project Tags After Toggling File Symbols",
